@@ -57,7 +57,7 @@ for event in longpoll.listen():
     if event.type == VkEventType.MESSAGE_NEW and event.to_me and event.text:
         if event.from_user:
 
-            if event.user_id == 260777926 || event.user_id == 262971013:
+            if event.user_id == 260777926 or event.user_id == 262971013:
 
                 command, login, = getCommand(text=event.text)
                 
